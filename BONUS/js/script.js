@@ -33,14 +33,16 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
-
+console.log(team)
 // BONUS 1:
 // trasformare la stringa foto in una immagine effettiva
-
-
 // BONUS 2:
 // organizzare i singoli membri in card/schede
+const rowWrapper = document.querySelector(".row");
 
+for (let i = 1; i <= 100; i++) {
+    rowWrapper.innerHTML +=  `<div class="box ${_number}">${_number}</div>`;
+}
 
 // BONUS 3:
 // Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, il quale viene inserito nell'array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall'utente.
