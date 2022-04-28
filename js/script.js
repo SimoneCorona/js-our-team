@@ -36,14 +36,14 @@ const team = [
 
 // MILESTONE 1:
 // stampare su console le informazioni di nome, ruolo e la stringa della foto
-for (let key in "team") {
+for (let key in team) {
     console.log(team[key].name, team[key].role, team[key].image);
 };
 
 // MILESTONE 2:
 // stampare le stesse informazioni su DOM sottoforma di stringhe
 let singlePerson = [];
-for (let key in "team") {
+for (let key in team) {
     singlePerson.push(`${team[key].name}` + ' ' + `${team[key].role}` + ' ' + `${team[key].image}`);
 };
 

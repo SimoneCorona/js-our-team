@@ -38,10 +38,30 @@ console.log(team)
 // trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // organizzare i singoli membri in card/schede
-const rowWrapper = document.querySelector(".row");
+const container = document.querySelector(".team-container");
+ for (let i = 0; i <= team.length; i++) {
+    let num;
+     container.innerHTML +=  
+     `<div class="team-card">
+        <div class="card-image">
+          <img
+            src="img/${team.image[indexArray()]}"
+            alt="${team.name[indexArray()]}"
+          />
+        </div>
+        <div class="card-text">
+          <h3>${team.name[indexArray()]}</h3>
+          <p>${team.role[indexArray()]}</p>
+        </div>
+      </div>`
+} 
 
-for (let i = 1; i <= 100; i++) {
-    rowWrapper.innerHTML +=  `<div class="box ${_number}">${_number}</div>`;
+function indexArray() {
+  let num = [];
+  for (let i = 0; i < team.length; i++) {
+    num.push(i)
+  }
+  console.log(num)
 }
 
 // BONUS 3:
