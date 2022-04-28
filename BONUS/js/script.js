@@ -34,20 +34,13 @@ const team = [
     },
 ];
 
-// MILESTONE 1:
-// stampare su console le informazioni di nome, ruolo e la stringa della foto
-for (let key in "team") {
-    console.log(team[key].name, team[key].role, team[key].image);
-};
+// BONUS 1:
+// trasformare la stringa foto in una immagine effettiva
 
-// MILESTONE 2:
-// stampare le stesse informazioni su DOM sottoforma di stringhe
-let singlePerson = [];
-for (let key in "team") {
-    singlePerson.push(`${team[key].name}` + ' ' + `${team[key].role}` + ' ' + `${team[key].image}`);
-};
 
-for (let i = 0; i < singlePerson.length; i++) {
-    const person = document.querySelector(".person");
-    person.innerHTML +=  `<h1>${singlePerson[i]}</h1>`;
-}
+// BONUS 2:
+// organizzare i singoli membri in card/schede
+
+
+// BONUS 3:
+// Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, il quale viene inserito nell'array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall'utente.
